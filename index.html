@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<style>body{background: #f6f6f6;}</style>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="head">
+				<div class="head-top flex flex-pack-justify flex-align-center">
+					<div class="head-user-main flex flex-1 flex-align-center">
+						<img src="http://jdc.jd.com/img/110x110" class="head-user-img"/>
+						<div class="head-user-info flex-1">
+							<div class="name oneline">漫步</div>
+							<div class="fs">粉丝</div>
+						</div>
+					</div>
+					<div class="head-right flex flex-pack-justify">
+						<span class="flex-1 oneline">邀请码：<i id="text">89g29xoy</i></span>
+						<span class="head-btn" id="copy">复制</span>
+					</div>
+				</div>
+			</div>
+			<div class="main">
+				<div class="mod mod1">
+					<div class="mod-title">
+						<h3>成为会员&nbsp;&nbsp;享<span>3</span>大特权</h3>
+					</div>
+					<div class="mod-spa">成为会员预计一年可省 ￥9468</div>
+					<div class="mod-items flex">
+						<div class="item flex-1">
+							<img src="images/item-img1.jpg" class="item-img"/>
+							<div class="item-info oneline">购物低至六折</div>
+						</div>
+						<div class="item flex-1">
+							<img src="images/item-img2.jpg" class="item-img"/>
+							<div class="item-info oneline">会员特价商品</div>
+						</div>
+						<div class="item flex-1">
+							<img src="images/item-img3.jpg" class="item-img"/>
+							<div class="item-info oneline">推广赚返利</div>
+						</div>
+					</div>
+					<div class="hr"></div>
+					<div class="mod-set-text">再邀请 <span>10</span> 个好友，即可成为会员<i class="iconfont icon-you"></i></div>
+					<div class="mod1-pro">
+						<span>0</span>
+						<span class="pro">
+							<i class="iconfont icon-duigouxiao"></i>
+						</span>
+						<span>10</span>
+					</div>
+					<div class="mod1-btn"></div>
+				</div> 
+				<div class="mod mod2">
+					<div class="mod2-text"><div class="text-m">￥</div>完成粉丝任务，得丰厚奖励</div>
+					<div class="mod2-go flex flex-pack-justify flex-align-center">
+						<div class="left">我的现金收益：<span>0</span> 元</div>
+						<div class="right">去体现 <i class="iconfont icon-you"></i></div>
+					</div>
+					<div class="mod2-ts flex flex-align-center">
+						<div class="left iconfont icon-gantanhao"></div>
+						<div class="right flex-1">粉丝任务仅限粉丝参与，升级成为会员后，现金方随平台奖励发放</div>
+					</div>
+					<div class="mod2-items">
+						<div class="mod2-item flex flex-align-center flex-pack-justify">
+							<div class="left">
+								<div class="money"><span>￥</span>7</div>
+							</div>
+							<div class="center flex-1 oneline">邀粉下首单立得7元红包</div>
+							<div class="right">去完成</div>
+						</div>
+						<div class="mod2-item flex flex-align-center flex-pack-justify">
+							<div class="left">
+								<div class="money"><span>￥</span>199</div>
+							</div>
+							<div class="center flex-1 oneline">邀10个好友立得199元红包</div>
+							<div class="right">去完成</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script src="http://www.love85g.com/cdn/copy/jquery.copy.min.js"></script>
+		<script>
+			var s = $("#text")
+			$.copy({
+			    text:"复制成功", //分享提示文案
+			    copyUrl:s.html(), //自定义复制链接地址
+			    tipTime:2000, //分享提示消失时间
+			    copyId:"#copy"//复制按钮id
+			});
+		</script>
+	</body>
+</html>
